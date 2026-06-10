@@ -1,0 +1,19 @@
+export enum ContaTipo {
+  RECEITA = 'RECEITA',
+  DESPESA = 'DESPESA',
+}
+
+export enum ContaStatus {
+  PENDENTE = 'PENDENTE',
+  PAGO = 'PAGO',
+  CANCELADO = 'CANCELADO',
+}
+
+export enum FormaPagamento {
+  DINHEIRO = 'DINHEIRO',
+  CARTAO_DEBITO = 'CARTAO_DEBITO',
+  CARTAO_CREDITO = 'CARTAO_CREDITO',
+  PIX = 'PIX',
+  TRANSFERENCIA = 'TRANSFERENCIA',
+  BOLETO = 'BOLETO',
+}

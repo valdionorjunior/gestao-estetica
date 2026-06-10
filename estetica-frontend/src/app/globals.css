@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+/* ──────────────────────────────────────────────
+   Design System — Estética Natalia Salvador
+   Tipografia: Cormorant Garamond (display) + Inter (body)
+   Paleta: Dourado #D4AF37 sobre cream #F8F7F4
+────────────────────────────────────────────── */
+
+@theme {
+  /* Tipografia */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+
+  /* Paleta primária */
+  --color-primary: #D4AF37;
+  --color-primary-dark: #B8962E;
+  --color-primary-light: #F0E6C8;
+
+  /* Superfícies */
+  --color-background: #F8F7F4;
+  --color-surface: #FFFFFF;
+  --color-border: #E8E4DD;
+
+  /* Texto */
+  --color-foreground: #1A1A1A;
+  --color-muted: #6B6560;
+
+  /* Semânticas */
+  --color-success: #22C55E;
+  --color-danger: #EF4444;
+  --color-warning: #F59E0B;
+  --color-info: #3B82F6;
+
+  /* Sombras */
+  --color-shadow: rgba(212, 175, 55, 0.08);
+}
+
+/* ── Variáveis CSS globais (light mode) ── */
+:root {
+  --color-bg: #F8F7F4;
+  --color-surface: #FFFFFF;
+  --color-border: #E8E4DD;
+  --color-text: #1A1A1A;
+  --color-text-muted: #6B6560;
+  --color-primary: #D4AF37;
+  --color-primary-dark: #B8962E;
+  --color-primary-light: #F0E6C8;
+  --color-accent: #1A1A1A;
+  --color-success: #22C55E;
+  --color-danger: #EF4444;
+  --color-warning: #F59E0B;
+  --color-info: #3B82F6;
+  --color-shadow: rgba(212, 175, 55, 0.08);
+}
+
+/* ── Dark mode ── */
+.dark {
+  --color-bg: #0F0F0F;
+  --color-surface: #1A1A1A;
+  --color-border: #2A2724;
+  --color-text: #F5F3EF;
+  --color-text-muted: #9A9590;
+  --color-primary: #D4AF37;
+  --color-primary-dark: #E5C44A;
+  --color-primary-light: #2A2418;
+  --color-accent: #F5F3EF;
+  --color-shadow: rgba(212, 175, 55, 0.05);
+}
+
+/* ── Base global ── */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern", "liga", "calt";
+}
+
+/* Números: sempre tabulares e sans-serif */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-sans);
+}
+
+/* ── Scrollbar personalizada ── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
